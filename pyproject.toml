@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kaggle-codes"
+version = "0.1.0"
+description = "Kaggle codes and some utils"
+authors = ["ziyi xi <ziyixi@mail.ustc.edu.cn>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "kaggle_codes"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+kaggle = "^1.5.13"
+torch = "^2.0.0"
+lightning = "^2.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+pylint = "^2.17.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
